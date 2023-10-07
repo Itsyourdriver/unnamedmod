@@ -15,8 +15,11 @@ public class moditems {
     public static final RegistryObject<Item> dragon_scale = ITEMS.register("dragon_scale",
             () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
 
-    public static final RegistryObject<Item> dragon_crystal = ITEMS.register("dragon_crystal",
+    public static final RegistryObject<Item> dragon_infused_crystal = ITEMS.register("dragon_infused_crystal",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> empty_crystal = ITEMS.register("empty_crystal",
+            () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);

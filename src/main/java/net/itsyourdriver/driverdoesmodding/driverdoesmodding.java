@@ -58,7 +58,8 @@ public class driverdoesmodding
     {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(moditems.dragon_scale);
-            event.accept(moditems.dragon_crystal);
+            event.accept(moditems.dragon_infused_crystal);
+            event.accept(moditems.empty_crystal);
         }
     }
 
