@@ -16,11 +16,11 @@ public class ModCreativeModeTabs {
 
 
     public static final RegistryObject<CreativeModeTab> ITSYOURDRIVER = CREATIVE_MODE_TABS.register("itsyourdriver",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(moditems.test_item.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(moditems.dragon_crystal.get()))
                     .title(Component.translatable("creativetab.itsyourdriver"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(moditems.test_item.get());
-
+                        pOutput.accept(moditems.dragon_scale.get());
+                        pOutput.accept(moditems.dragon_crystal.get());
                         pOutput.accept(modblocks.test_block.get());
                     })
                     .build());

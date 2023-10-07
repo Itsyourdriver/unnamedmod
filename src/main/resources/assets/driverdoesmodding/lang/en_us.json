@@ -1,6 +1,6 @@
 {
-  "item.driverdoesmodding.test_item": "Dragon Scale",
-
+  "item.driverdoesmodding.dragon_scale": "Dragon Scale",
+  "item.driverdoesmodding.dragon_crystal": "Dragon Crystal",
   "block.driverdoesmodding.test_block": "Block Of Testing",
 
   "creativetab.itsyourdriver": "Itsyourdriver"

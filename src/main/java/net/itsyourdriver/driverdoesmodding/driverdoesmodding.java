@@ -57,7 +57,8 @@ public class driverdoesmodding
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(moditems.test_item);
+            event.accept(moditems.dragon_scale);
+            event.accept(moditems.dragon_crystal);
         }
     }
 
