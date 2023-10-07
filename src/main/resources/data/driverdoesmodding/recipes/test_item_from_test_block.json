@@ -3,11 +3,11 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "driverdoesmodding:dragon_infused_crystal"
+      "item": "driverdoesmodding:test_block"
     }
   ],
   "result": {
-    "item": "driverdoesmodding:dragon_scale",
+    "item": "driverdoesmodding:dragon_infused_item",
     "count": 9
   }
 }

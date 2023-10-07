@@ -2,10 +2,14 @@
   "item.driverdoesmodding.dragon_scale": "Dragon Scale",
   "item.driverdoesmodding.dragon_infused_crystal": "Dragon Infused Crystal",
   "item.driverdoesmodding.empty_crystal": "Empty Crystal",
+  "item.driverdoesmodding.metal_detector": "Metal Detector",
+
+  "item.driverdoesmodding.strawberry": "Strawberry",
 
 
+  "item.driverdoesmodding.pine_cone": "Pine Cone",
 
   "block.driverdoesmodding.test_block": "Block Of Testing",
-
+  "block.driverdoesmodding.sound_block": "Block Of Sound",
   "creativetab.itsyourdriver": "Itsyourdriver"
 }

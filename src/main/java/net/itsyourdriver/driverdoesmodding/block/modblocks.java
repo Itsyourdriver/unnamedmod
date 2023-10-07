@@ -1,6 +1,8 @@
 package net.itsyourdriver.driverdoesmodding.block;
 import net.itsyourdriver.driverdoesmodding.Item.moditems;
+import net.itsyourdriver.driverdoesmodding.block.custom.SoundBlock;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
+import net.minecraft.client.resources.sounds.Sound;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -21,6 +23,9 @@ public class modblocks {
     public static final RegistryObject<Block> test_block = registerBlock("test_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK)));
 
+
+    public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+            () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock (String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

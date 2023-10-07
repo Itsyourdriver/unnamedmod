@@ -60,6 +60,7 @@ public class driverdoesmodding
             event.accept(moditems.dragon_scale);
             event.accept(moditems.dragon_infused_crystal);
             event.accept(moditems.empty_crystal);
+            event.accept(moditems.METAL_DETECTOR);
         }
     }
 

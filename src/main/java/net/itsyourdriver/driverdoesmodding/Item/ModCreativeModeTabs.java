@@ -22,9 +22,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(moditems.dragon_scale.get());
                         pOutput.accept(moditems.dragon_infused_crystal.get());
                         pOutput.accept(moditems.empty_crystal.get());
+                        pOutput.accept(moditems.METAL_DETECTOR.get());
 
+                        pOutput.accept(moditems.STRAWBERRY.get());
+                        pOutput.accept(moditems.pine_cone.get());
 
                         pOutput.accept(modblocks.test_block.get());
+                        pOutput.accept(modblocks.SOUND_BLOCK.get());
                     })
                     .build());
 
