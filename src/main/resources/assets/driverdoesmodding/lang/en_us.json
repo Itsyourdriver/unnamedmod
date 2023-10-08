@@ -8,7 +8,7 @@
 
 
   "item.driverdoesmodding.pine_cone": "Pine Cone",
-
+  "tooltip.driverdoesmodding.metal_detector.tooltip": "Finds valuebles underground!",
   "block.driverdoesmodding.test_block": "Block Of Testing",
   "block.driverdoesmodding.sound_block": "Block Of Sound",
   "creativetab.itsyourdriver": "Itsyourdriver"

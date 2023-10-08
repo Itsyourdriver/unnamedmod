@@ -27,16 +27,15 @@ public class modblocks {
     public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
             () -> new SoundBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
-    private static <T extends Block> RegistryObject<T> registerBlock (String name, Supplier<T> block){
+    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
         return toReturn;
     }
 
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block){
+    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
         return moditems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
-
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
