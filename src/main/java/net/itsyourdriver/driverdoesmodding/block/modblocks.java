@@ -17,7 +17,7 @@ import net.minecraftforge.registries.RegistryObject;
 import java.util.function.Supplier;
 
 public class modblocks {
-    public static final DeferredRegister BLOCKS =
+    public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, driverdoesmodding.MOD_ID);
 
     public static final RegistryObject<Block> test_block = registerBlock("test_block",

@@ -1,3 +1,5 @@
 wip
 
 do not use assets outside of the mod, thanks thats all
+
+(strawberry, test block, metal detector, and pine cone textures are not mine.)
