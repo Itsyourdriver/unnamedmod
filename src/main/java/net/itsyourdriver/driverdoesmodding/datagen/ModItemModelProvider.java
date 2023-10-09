@@ -1,6 +1,6 @@
 package net.itsyourdriver.driverdoesmodding.datagen;
 
-import net.itsyourdriver.driverdoesmodding.Item.moditems;
+import net.itsyourdriver.driverdoesmodding.Item.ModItems;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
@@ -17,12 +17,13 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        simpleItem(moditems.dragon_scale);
-        simpleItem(moditems.dragon_infused_crystal);
-        simpleItem(moditems.empty_crystal);
-        simpleItem(moditems.METAL_DETECTOR);
-        simpleItem(moditems.pine_cone);
-        simpleItem(moditems.STRAWBERRY);
+        simpleItem(ModItems.dragon_scale);
+        simpleItem(ModItems.dragon_infused_crystal);
+        simpleItem(ModItems.empty_crystal);
+        simpleItem(ModItems.METAL_DETECTOR);
+        simpleItem(ModItems.pine_cone);
+        simpleItem(ModItems.STRAWBERRY);
+        System.out.println("finished registering models");
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

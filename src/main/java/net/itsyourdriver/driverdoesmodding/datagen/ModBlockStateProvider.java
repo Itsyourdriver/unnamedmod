@@ -1,6 +1,6 @@
 package net.itsyourdriver.driverdoesmodding.datagen;
 
-import net.itsyourdriver.driverdoesmodding.block.modblocks;
+import net.itsyourdriver.driverdoesmodding.block.ModBlocks;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
@@ -15,10 +15,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-    blockWithItem(modblocks.test_block);
+    blockWithItem(ModBlocks.test_block);
 
 
-    blockWithItem(modblocks.SOUND_BLOCK);
+    blockWithItem(ModBlocks.SOUND_BLOCK);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

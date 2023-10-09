@@ -2,8 +2,8 @@ package net.itsyourdriver.driverdoesmodding;
 
 import com.mojang.logging.LogUtils;
 import net.itsyourdriver.driverdoesmodding.Item.ModCreativeModeTabs;
-import net.itsyourdriver.driverdoesmodding.Item.moditems;
-import net.itsyourdriver.driverdoesmodding.block.modblocks;
+import net.itsyourdriver.driverdoesmodding.Item.ModItems;
+import net.itsyourdriver.driverdoesmodding.block.ModBlocks;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -34,8 +34,8 @@ public class driverdoesmodding
 
 
         ModCreativeModeTabs.register(modEventBus);
-        moditems.register(modEventBus);
-        modblocks.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 
@@ -57,10 +57,7 @@ public class driverdoesmodding
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-            event.accept(moditems.dragon_scale);
-            event.accept(moditems.dragon_infused_crystal);
-            event.accept(moditems.empty_crystal);
-            event.accept(moditems.METAL_DETECTOR);
+
         }
     }
 

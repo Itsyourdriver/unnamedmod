@@ -1,0 +1,5 @@
+// 1.20.1	2023-10-09T11:54:08.102953	Tags for minecraft:block mod id driverdoesmodding
+3188f0852bf23465a07311fe7a00b2b39bbc5ef0 data/driverdoesmodding/tags/blocks/metal_detector_valuebles.json
+0d8866eead240374b06ddc50d79bc31e618c9001 data/forge/tags/blocks/needs_netherite_tool.json
+6e582b01cb133c6ecd585ce8556af9f6c0b9440d data/minecraft/tags/blocks/mineable/pickaxe.json
+0bc7dd9bfd15437d25cf8eafd6801da7f725f575 data/minecraft/tags/blocks/needs_iron_tool.json

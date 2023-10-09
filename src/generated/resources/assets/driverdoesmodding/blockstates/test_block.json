@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "driverdoesmodding:block/test_block"
+    }
+  }
+}
