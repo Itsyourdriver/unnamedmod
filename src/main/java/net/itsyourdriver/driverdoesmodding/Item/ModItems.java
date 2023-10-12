@@ -1,6 +1,7 @@
 package net.itsyourdriver.driverdoesmodding.Item;
 
 import net.itsyourdriver.driverdoesmodding.Item.custom.FuelItem;
+import net.itsyourdriver.driverdoesmodding.Item.custom.ModArmorItem;
 import net.itsyourdriver.driverdoesmodding.Item.custom.metaldetectoritem;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.minecraft.world.item.*;
@@ -51,7 +52,7 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> CRYSTAL_INFUSED_DRAGON_HELMET = ITEMS.register("crystal_infused_dragon_helmet",
-            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.RARE)));
+            () -> new ModArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.RARE)));
 
     public static final RegistryObject<Item> CRYSTAL_INFUSED_DRAGON_CHESTPLATE = ITEMS.register("crystal_infused_dragon_chestplate",
             () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(Rarity.RARE)));
