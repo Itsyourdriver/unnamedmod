@@ -4,12 +4,42 @@
   "item.driverdoesmodding.empty_crystal": "Empty Crystal",
   "item.driverdoesmodding.metal_detector": "Metal Detector",
 
-  "item.driverdoesmodding.strawberry": "Strawberry",
 
+  "item.driverdoesmodding.sapphire": "Sapphire",
+  "item.driverdoesmodding.strawberry": "Strawberry",
+  "item.driverdoesmodding.sapphire_staff": "Sapphire Staff",
 
   "item.driverdoesmodding.pine_cone": "Pine Cone",
   "tooltip.driverdoesmodding.metal_detector.tooltip": "Finds valuebles underground!",
-  "block.driverdoesmodding.test_block": "Block Of Testing",
+  "block.driverdoesmodding.test_block": "Sapphire Block",
   "block.driverdoesmodding.sound_block": "Block Of Sound",
+
+  "item.driverdoesmodding.sapphire_sword": "Sapphire Sword",
+  "item.driverdoesmodding.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.driverdoesmodding.sapphire_axe": "Sapphire Axe",
+  "item.driverdoesmodding.sapphire_shovel": "Sapphire Shovel",
+  "item.driverdoesmodding.sapphire_hoe": "Sapphire Hoe",
+
+
+  "item.driverdoesmodding.crystal_infused_dragon_leggings": "Crystal Infused Dragon Leggings",
+  "item.driverdoesmodding.crystal_infused_dragon_chestplate": "Crystal Infused Dragon Chestplate",
+  "item.driverdoesmodding.crystal_infused_dragon_helmet": "Crystal Infused Dragon Helmet",
+  "item.driverdoesmodding.crystal_infused_dragon_boots": "Crystal Infused Dragon Boots",
+
+
+
+
+  "block.driverdoesmodding.sapphire_stairs": "Sapphire Stairs",
+  "block.driverdoesmodding.sapphire_slab": "Sapphire Slab",
+  "block.driverdoesmodding.sapphire_button": "Sapphire Button",
+  "block.driverdoesmodding.sapphire_pressure_plate": "Sapphire Pressure Plate",
+  "block.driverdoesmodding.sapphire_fence": "Sapphire Fence",
+  "block.driverdoesmodding.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.driverdoesmodding.sapphire_wall": "Sapphire Wall",
+  "block.driverdoesmodding.sapphire_door": "Sapphire Door",
+  "block.driverdoesmodding.sapphire_trapdoor": "Sapphire Trapdoor",
+
+
+
   "creativetab.itsyourdriver": "Itsyourdriver"
 }

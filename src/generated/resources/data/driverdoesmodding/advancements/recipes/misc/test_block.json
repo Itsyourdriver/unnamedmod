@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_empty_crystal": {
+    "has_sapphire": {
       "conditions": {
         "items": [
           {
             "items": [
-              "driverdoesmodding:empty_crystal"
+              "driverdoesmodding:sapphire"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_empty_crystal",
+      "has_sapphire",
       "has_the_recipe"
     ]
   ],

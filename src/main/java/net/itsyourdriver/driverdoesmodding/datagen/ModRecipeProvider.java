@@ -37,11 +37,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .pattern("SSS")
                 .pattern("SSS")
-                .define('S', ModItems.empty_crystal.get())
-                .unlockedBy(getHasName(ModItems.empty_crystal.get()), has(ModItems.empty_crystal.get()))
+                .define('S', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.empty_crystal.get(), 9)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.test_block.get())
                 .unlockedBy(getHasName(ModBlocks.test_block.get()), has(ModBlocks.test_block.get()))
                 .save(pWriter);

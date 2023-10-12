@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "driverdoesmodding:block/sapphire_slab"
+    },
+    "type=double": {
+      "model": "driverdoesmodding:block/test_block"
+    },
+    "type=top": {
+      "model": "driverdoesmodding:block/sapphire_slab_top"
+    }
+  }
+}

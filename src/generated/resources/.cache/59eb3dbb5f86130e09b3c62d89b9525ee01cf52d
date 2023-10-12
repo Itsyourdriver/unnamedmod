@@ -1,3 +1,12 @@
-// 1.20.1	2023-10-09T11:54:08.1009527	Loot Tables
+// 1.20.1	2023-10-09T18:33:40.7574824	Loot Tables
+56fd17281d7d9188b11b205f96235f7d6c2822e9 data/driverdoesmodding/loot_tables/blocks/sapphire_button.json
+0ef305a069ece4117bad061c83b5849c56aee89b data/driverdoesmodding/loot_tables/blocks/sapphire_door.json
+3c213a05e7e463bd5396ca7fe120495e5e6a90cc data/driverdoesmodding/loot_tables/blocks/sapphire_fence.json
+68d246ff8a69e21b634d05c9424b33740cb5195b data/driverdoesmodding/loot_tables/blocks/sapphire_fence_gate.json
+3050bf9205b4f95552e184df6a6e3bf547067a8f data/driverdoesmodding/loot_tables/blocks/sapphire_pressure_plate.json
+080d0913488b10dcdac095db8ea7cbc7ecd9c149 data/driverdoesmodding/loot_tables/blocks/sapphire_slab.json
+a71314177cb6b1ebbf52b05c6c8ba266b4011637 data/driverdoesmodding/loot_tables/blocks/sapphire_stairs.json
+9691979e5dd9dd3fe10d19f55305d5338e949456 data/driverdoesmodding/loot_tables/blocks/sapphire_trapdoor.json
+59f7117cdc7261b596830fd9f59c041f74999c22 data/driverdoesmodding/loot_tables/blocks/sapphire_wall.json
 438fcadf3dc1979bc98002e3d512023362261aee data/driverdoesmodding/loot_tables/blocks/sound_block.json
 b3ab65c32dc428f27619035784d3478be0bee6ad data/driverdoesmodding/loot_tables/blocks/test_block.json

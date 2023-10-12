@@ -1,5 +1,9 @@
-// 1.20.1	2023-10-09T11:54:08.102953	Tags for minecraft:block mod id driverdoesmodding
-3188f0852bf23465a07311fe7a00b2b39bbc5ef0 data/driverdoesmodding/tags/blocks/metal_detector_valuebles.json
+// 1.20.1	2023-10-11T17:20:43.4320685	Tags for minecraft:block mod id driverdoesmodding
+c05c464fe290da4f45d06c741eef9ef84d947bfd data/driverdoesmodding/tags/blocks/metal_detector_valuebles.json
+0d8866eead240374b06ddc50d79bc31e618c9001 data/driverdoesmodding/tags/blocks/needs_sapphire_tool.json
 0d8866eead240374b06ddc50d79bc31e618c9001 data/forge/tags/blocks/needs_netherite_tool.json
+967a25b6badc4f229c50b9d292e2f7472f511912 data/minecraft/tags/blocks/fences.json
+9a3cf9b5d33250f432fc4389e6654e7ac914557a data/minecraft/tags/blocks/fence_gates.json
 6e582b01cb133c6ecd585ce8556af9f6c0b9440d data/minecraft/tags/blocks/mineable/pickaxe.json
 0bc7dd9bfd15437d25cf8eafd6801da7f725f575 data/minecraft/tags/blocks/needs_iron_tool.json
+cc1cb935d628b8212ddc75c40d7b7dec244f3109 data/minecraft/tags/blocks/walls.json
