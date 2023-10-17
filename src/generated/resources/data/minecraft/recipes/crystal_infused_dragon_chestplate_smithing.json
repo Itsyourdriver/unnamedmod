@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "driverdoesmodding:dragon_infused_crystal"
+  },
+  "base": {
+    "item": "minecraft:netherite_chestplate"
+  },
+  "result": {
+    "item": "driverdoesmodding:crystal_infused_dragon_chestplate"
+  },
+  "template": {
+    "item": "driverdoesmodding:crystal_infused_dragon_upgrade_smithing_template"
+  }
+}

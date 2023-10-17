@@ -50,6 +50,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.pine_cone);
         simpleItem(ModItems.STRAWBERRY);
         simpleItem(ModItems.SAPPHIRE);
+        simpleItem(ModItems.crystal_infused_dragon_upgrade_smithing_template);
+       // simpleItem(ModItems.CRYSTAL_INFUSED_DRAGON_UPGRADE);
 
 
 

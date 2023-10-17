@@ -16,7 +16,7 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.crystal_infused_dragon, new MobEffectInstance(MobEffects.DIG_SPEED, 600, 0,
-                            false,false, true)).build();
+                            true,false, true)).build();
 
 
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {

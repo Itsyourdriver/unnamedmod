@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.itsyourdriver.driverdoesmodding.Item.ModCreativeModeTabs;
 import net.itsyourdriver.driverdoesmodding.Item.ModItems;
 import net.itsyourdriver.driverdoesmodding.block.ModBlocks;
+import net.itsyourdriver.driverdoesmodding.loot.ModLootModifiers;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -36,6 +37,7 @@ public class driverdoesmodding
         ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
 

@@ -4,13 +4,22 @@ import net.itsyourdriver.driverdoesmodding.Item.custom.FuelItem;
 import net.itsyourdriver.driverdoesmodding.Item.custom.ModArmorItem;
 import net.itsyourdriver.driverdoesmodding.Item.custom.metaldetectoritem;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+
+
 public class ModItems {
+
+
+    private static final ResourceLocation EMPTY_SLOT_HELMET = new ResourceLocation("item/empty_armor_slot_helmet");
+    private static final ResourceLocation EMPTY_SLOT_CHESTPLATE = new ResourceLocation("item/empty_armor_slot_chestplate");
+    private static final ResourceLocation EMPTY_SLOT_LEGGINGS = new ResourceLocation("item/empty_armor_slot_leggings");
+    private static final ResourceLocation EMPTY_SLOT_BOOTS = new ResourceLocation("item/empty_armor_slot_boots");
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, driverdoesmodding.MOD_ID);
 
@@ -19,6 +28,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> dragon_infused_crystal = ITEMS.register("dragon_infused_crystal",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
+
+    public static final RegistryObject<Item> crystal_infused_dragon_upgrade_smithing_template = ITEMS.register("crystal_infused_dragon_upgrade_smithing_template",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
 
     public static final RegistryObject<Item> empty_crystal = ITEMS.register("empty_crystal",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
@@ -65,15 +78,8 @@ public class ModItems {
 
 
 
-
-
-
-
-
-
     public static final RegistryObject<Item> pine_cone = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));
-
 
 
 

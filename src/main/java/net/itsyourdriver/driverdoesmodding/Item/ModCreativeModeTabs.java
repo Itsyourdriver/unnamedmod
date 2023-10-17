@@ -47,6 +47,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.CRYSTAL_INFUSED_DRAGON_BOOTS.get());
                         pOutput.accept(ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get());
                         pOutput.accept(ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get());
+                        pOutput.accept(ModItems.crystal_infused_dragon_upgrade_smithing_template.get());
 
 
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
