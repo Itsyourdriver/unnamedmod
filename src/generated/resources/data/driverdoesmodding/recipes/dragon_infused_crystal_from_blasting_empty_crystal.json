@@ -1,7 +1,7 @@
 {
   "type": "minecraft:blasting",
   "category": "misc",
-  "cookingtime": 100,
+  "cookingtime": 370,
   "experience": 0.25,
   "group": "sapphire",
   "ingredient": {

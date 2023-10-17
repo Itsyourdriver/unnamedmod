@@ -34,8 +34,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         LOGGER.info("we did some stuff with packoutput and all that");
-        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 500, "sapphire");
+        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 370, "sapphire");
         dragonSmithing(pWriter,Items.NETHERITE_CHESTPLATE, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get());
         dragonSmithing(pWriter,Items.NETHERITE_LEGGINGS, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get());
         dragonSmithing(pWriter,Items.NETHERITE_HELMET, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get());
@@ -48,6 +48,19 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.SAPPHIRE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.crystal_infused_dragon_upgrade_smithing_template.get())
+                .pattern("FDF")
+                .pattern("FEF")
+                .pattern("FFF")
+                .define('D', ModItems.dragon_scale.get())
+                .define('E', ModItems.dragon_infused_crystal.get())
+                .define('F', Items.END_STONE)
+                .unlockedBy(getHasName(ModItems.dragon_scale.get()), has(ModItems.dragon_infused_crystal.get()))
+                .save(pWriter);
+
+
+
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.test_block.get())

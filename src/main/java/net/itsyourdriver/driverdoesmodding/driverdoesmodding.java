@@ -58,8 +58,11 @@ public class driverdoesmodding
 
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
-        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
-
+        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+            event.accept(ModItems.crystal_infused_dragon_upgrade_smithing_template.get());
+            event.accept(ModItems.dragon_infused_crystal.get());
+            event.accept(ModItems.dragon_scale.get());
+            event.accept(ModItems.empty_crystal.get());
         }
     }
 

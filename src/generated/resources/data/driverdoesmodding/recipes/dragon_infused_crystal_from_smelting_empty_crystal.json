@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smelting",
   "category": "misc",
-  "cookingtime": 200,
+  "cookingtime": 500,
   "experience": 0.25,
   "group": "sapphire",
   "ingredient": {
