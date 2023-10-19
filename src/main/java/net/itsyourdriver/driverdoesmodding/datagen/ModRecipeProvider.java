@@ -7,6 +7,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.armortrim.TrimPattern;
 import net.minecraft.world.item.crafting.AbstractCookingRecipe;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -26,6 +27,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final Logger LOGGER = LogUtils.getLogger();
     private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.empty_crystal.get(),
             ModBlocks.test_block.get());
+
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -49,13 +51,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.crystal_infused_dragon_upgrade_smithing_template.get())
+
+
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.crystal_infused_dragon_upgrade_smithing_template.get(), 2)
                 .pattern("FDF")
                 .pattern("FEF")
                 .pattern("FFF")
-                .define('D', ModItems.dragon_scale.get())
+                .define('D', ModItems.crystal_infused_dragon_upgrade_smithing_template.get())
                 .define('E', ModItems.dragon_infused_crystal.get())
-                .define('F', Items.END_STONE)
+                .define('F', Items.DIAMOND)
                 .unlockedBy(getHasName(ModItems.dragon_scale.get()), has(ModItems.dragon_infused_crystal.get()))
                 .save(pWriter);
 
@@ -65,6 +71,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.test_block.get())
                 .unlockedBy(getHasName(ModBlocks.test_block.get()), has(ModBlocks.test_block.get()))
+                .save(pWriter);
+
+
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHERITE_CHESTPLATE, 1)
+                .requires(Items.NETHERITE_CHESTPLATE)
+                .unlockedBy(getHasName(Items.NETHERITE_CHESTPLATE), has(Items.NETHERITE_CHESTPLATE))
                 .save(pWriter);
     }
 

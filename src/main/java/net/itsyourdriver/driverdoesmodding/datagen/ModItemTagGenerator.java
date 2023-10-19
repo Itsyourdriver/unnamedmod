@@ -19,10 +19,9 @@ public class ModItemTagGenerator extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-      //  this.tag(ItemTags.TRIMMABLE_ARMOR) haha no trim for you >:))
-           ///     .add(ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get(),
-           //             ModItems.CRYSTAL_INFUSED_DRAGON_BOOTS.get(),
-             //           ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get(),
-             //           ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get());
+        this.tag(ItemTags.TRIMMABLE_ARMOR)// haha no trim for you >:))
+                .add(ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get(),
+                    ModItems.CRYSTAL_INFUSED_DRAGON_BOOTS.get(), ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get(),
+                    ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get());
     }
 }

@@ -65,16 +65,16 @@ public class ModItems {
 
 
     public static final RegistryObject<Item> CRYSTAL_INFUSED_DRAGON_HELMET = ITEMS.register("crystal_infused_dragon_helmet",
-            () -> new ModArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.RARE)));
+            () -> new ModArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.HELMET, new Item.Properties().rarity(Rarity.RARE).fireResistant()));
 
     public static final RegistryObject<Item> CRYSTAL_INFUSED_DRAGON_CHESTPLATE = ITEMS.register("crystal_infused_dragon_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(Rarity.RARE)));
+            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.CHESTPLATE, new Item.Properties().rarity(Rarity.RARE).fireResistant()));
 
     public static final RegistryObject<Item> CRYSTAL_INFUSED_DRAGON_LEGGINGS = ITEMS.register("crystal_infused_dragon_leggings",
-            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.LEGGINGS, new Item.Properties().rarity(Rarity.RARE)));
+            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.LEGGINGS, new Item.Properties().rarity(Rarity.RARE).fireResistant()));
 
     public static final RegistryObject<Item> CRYSTAL_INFUSED_DRAGON_BOOTS = ITEMS.register("crystal_infused_dragon_boots",
-            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.RARE)));
+            () -> new ArmorItem(ModArmorMaterials.crystal_infused_dragon, ArmorItem.Type.BOOTS, new Item.Properties().rarity(Rarity.RARE).fireResistant()));
 
 
 

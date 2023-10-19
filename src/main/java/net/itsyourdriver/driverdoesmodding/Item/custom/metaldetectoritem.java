@@ -50,7 +50,6 @@ public class metaldetectoritem extends Item {
 
         pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
                 player -> player.broadcastBreakEvent(player.getUsedItemHand()));
-
         return InteractionResult.SUCCESS;
     }
 
@@ -59,6 +58,7 @@ public class metaldetectoritem extends Item {
     public void appendHoverText(ItemStack pStack, @Nullable Level pLevel, List<Component> pTooltipComponents, TooltipFlag pIsAdvanced) {
         pTooltipComponents.add(Component.translatable("tooltip.driverdoesmodding.metal_detector.tooltip"));
         super.appendHoverText(pStack, pLevel, pTooltipComponents, pIsAdvanced);
+
     }
 
     private void outputValueBleCoordinate(BlockPos blockPos, Player player, Block block) {
