@@ -63,7 +63,7 @@ public class ModArmorItem extends ArmorItem {
         if(hasCorrectArmorOn(mapArmorMaterial, player) && !hasPlayerEffect) {
             player.addEffect(new MobEffectInstance(mapStatusEffect));
             ClientEvents.canDash = true;
-            System.out.println(ClientEvents.canDash);
+           // System.out.println(ClientEvents.canDash);
         }
 
 

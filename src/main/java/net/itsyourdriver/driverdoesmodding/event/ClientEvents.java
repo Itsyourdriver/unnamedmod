@@ -22,12 +22,19 @@ import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
+import java.util.Map;
 
 
 public class ClientEvents{
 
 
     public static boolean canDash = false;
+
+
+    private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
+            (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
+                    .put(ModArmorMaterials.crystal_infused_dragon, new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 600, 0,
+                            true,false, true)).build();
 
 
 
@@ -38,32 +45,68 @@ public class ClientEvents{
         static int cooldown = 0;
 
 
+
+
         @SubscribeEvent
         public static void onKeyInput(InputEvent.Key event) {
 
             //byte cooldown = 0;
             Minecraft mc = Minecraft.getInstance();
             Player player = mc.player;
-//&& canDash == true
-            if (KeyBinding.DASH_KEY.consumeClick() && cooldown <= 0 && player.onGround() == true) {
 
-                Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
-                Vec3 playerLook = player.getLookAngle();
-                Vec3 dashVec = new Vec3(playerLook.x(), playerLook.y(), playerLook.z()); //new Vec3(playerLook.x(), playerLook.y(), playerLook.z());
-                player.setDeltaMovement(dashVec);
-                cooldown = 40;
-                //System.out.println(canDash);
+
+            Item helmet = player.getInventory().getArmor(3).getItem();
+            Item breastplate = player.getInventory().getArmor(2).getItem();
+            Item pants = player.getInventory().getArmor(1).getItem();
+            Item boots = player.getInventory().getArmor(0).getItem();
+
+
+            boolean playerHasFullArmorElytraCase = false;
+
+            if (breastplate == Items.ELYTRA && breastplate != ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get() && helmet == ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get() && pants == ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get() && boots == ModItems.CRYSTAL_INFUSED_DRAGON_BOOTS.get()) {
+                playerHasFullArmorElytraCase = true;
+
+
+            } else if (breastplate != Items.ELYTRA && breastplate == ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get() && helmet == ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get() && pants == ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get() && boots == ModItems.CRYSTAL_INFUSED_DRAGON_BOOTS.get()) {
+                playerHasFullArmorElytraCase = true;
+                //ClientEvents.canDash = true;
             }
-        }
+            else
+                playerHasFullArmorElytraCase = false;
+            // ClientEvents.canDash = false;
+
+//&& canDash == true
+           // System.out.println(playerHasFullArmorElytraCase);
+                if (KeyBinding.DASH_KEY.consumeClick() && cooldown <= 0 && player.onGround() == true && playerHasFullArmorElytraCase) {
+
+                    Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
+                    Vec3 playerLook = player.getLookAngle();
+                    Vec3 dashVec = new Vec3(playerLook.x(), playerLook.y(), playerLook.z()); //new Vec3(playerLook.x(), playerLook.y(), playerLook.z());
+                    player.setDeltaMovement(dashVec);
+                    cooldown = 40;
+                    //System.out.println(canDash);
+
+                }
+            }
 
         @SubscribeEvent
         public static void onTick(TickEvent.PlayerTickEvent event)
         {
+
+
             if (cooldown > 0 && event.phase.equals(TickEvent.Phase.START) && event.side.isClient() && event.player.equals(Minecraft.getInstance().player))
                 --cooldown;
         }
 
+
+
+
+
     }
+
+
+
+
 
     @Mod.EventBusSubscriber(modid = driverdoesmodding.MOD_ID, value = Dist.CLIENT, bus = Mod.EventBusSubscriber.Bus.MOD)
     public static class ClientModBusEvents {
