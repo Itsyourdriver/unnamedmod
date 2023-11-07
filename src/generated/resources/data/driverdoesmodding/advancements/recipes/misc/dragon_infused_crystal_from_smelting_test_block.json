@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "driverdoesmodding:dragon_ingot_from_smelting_test_block"
+        "recipe": "driverdoesmodding:dragon_infused_crystal_from_smelting_test_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "driverdoesmodding:dragon_ingot_from_smelting_test_block"
+      "driverdoesmodding:dragon_infused_crystal_from_smelting_test_block"
     ]
   },
   "sends_telemetry_event": false

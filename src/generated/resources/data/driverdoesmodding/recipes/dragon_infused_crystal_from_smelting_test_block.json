@@ -5,7 +5,7 @@
   "experience": 0.25,
   "group": "sapphire",
   "ingredient": {
-    "item": "driverdoesmodding:empty_crystal"
+    "item": "driverdoesmodding:test_block"
   },
-  "result": "driverdoesmodding:dragon_ingot"
+  "result": "driverdoesmodding:dragon_infused_crystal"
 }

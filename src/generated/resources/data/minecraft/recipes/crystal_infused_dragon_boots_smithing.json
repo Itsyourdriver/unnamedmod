@@ -1,7 +1,7 @@
 {
   "type": "minecraft:smithing_transform",
   "addition": {
-    "item": "driverdoesmodding:dragon_infused_crystal"
+    "item": "driverdoesmodding:dragon_ingot"
   },
   "base": {
     "item": "minecraft:netherite_boots"
