@@ -8,6 +8,7 @@ import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.itsyourdriver.driverdoesmodding.util.KeyBinding;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.Entity;
@@ -52,6 +53,12 @@ public class ClientEvents{
 
             //byte cooldown = 0;
             Minecraft mc = Minecraft.getInstance();
+
+
+            if (mc.player == null)
+                return;
+
+
             Player player = mc.player;
 
 
@@ -75,16 +82,17 @@ public class ClientEvents{
                 playerHasFullArmorElytraCase = false;
             // ClientEvents.canDash = false;
 
-//&& canDash == true
+//&& canDash == true //player.onGround() == true &&
            // System.out.println(playerHasFullArmorElytraCase);
                 if (KeyBinding.DASH_KEY.consumeClick() && cooldown <= 0 && player.onGround() == true && playerHasFullArmorElytraCase) {
 
-                    Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
+                 //   Minecraft.getInstance().player.sendSystemMessage(Component.literal("Pressed a Key!"));
                     Vec3 playerLook = player.getLookAngle();
                     Vec3 dashVec = new Vec3(playerLook.x(), playerLook.y(), playerLook.z()); //new Vec3(playerLook.x(), playerLook.y(), playerLook.z());
                     player.setDeltaMovement(dashVec);
                     cooldown = 40;
                     //System.out.println(canDash);
+                    player.playSound(SoundEvents.BRUSH_GRAVEL, 0.7f, 1);
 
                 }
             }

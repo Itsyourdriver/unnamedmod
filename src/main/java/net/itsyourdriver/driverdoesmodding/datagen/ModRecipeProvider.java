@@ -36,8 +36,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         LOGGER.info("we did some stuff with packoutput and all that");
-        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 500, "sapphire");
-        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 370, "sapphire");
+        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_ingot.get(), 0.25f, 500, "sapphire");
+        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_ingot.get(), 0.25f, 370, "sapphire");
         dragonSmithing(pWriter,Items.NETHERITE_CHESTPLATE, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get());
         dragonSmithing(pWriter,Items.NETHERITE_LEGGINGS, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get());
         dragonSmithing(pWriter,Items.NETHERITE_HELMET, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get());

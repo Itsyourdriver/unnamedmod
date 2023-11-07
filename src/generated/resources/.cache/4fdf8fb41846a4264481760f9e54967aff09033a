@@ -1,4 +1,4 @@
-// 1.20.1	2023-10-16T18:49:38.5286108	Item Models: driverdoesmodding
+// 1.20.1	2023-11-06T19:55:09.6544225	Item Models: driverdoesmodding
 41e641da5bc954691bbbb1f8483f18c8ac157961 assets/driverdoesmodding/models/item/crystal_infused_dragon_boots.json
 c254a73a28e4364ef8a53a79570cf17eafb1854c assets/driverdoesmodding/models/item/crystal_infused_dragon_boots_amethyst_trim.json
 e0e71564bf0d13eb793ab3caaafd260fdbbaeefa assets/driverdoesmodding/models/item/crystal_infused_dragon_boots_copper_trim.json
@@ -45,6 +45,7 @@ bf477b82904d50464e5f03de8eaf1ed884f2f228 assets/driverdoesmodding/models/item/cr
 2d315ad0722be1568d74495e13a3af9c1d55a723 assets/driverdoesmodding/models/item/crystal_infused_dragon_leggings_redstone_trim.json
 6fc9d6a9c145ebd826b8c4f638302edde62d4345 assets/driverdoesmodding/models/item/crystal_infused_dragon_upgrade_smithing_template.json
 2b9d79ebff62dfdb6c623c6c54278a461e3c14b2 assets/driverdoesmodding/models/item/dragon_infused_crystal.json
+df447f648b384ee6d738ee44bef162a9bfb8e3b0 assets/driverdoesmodding/models/item/dragon_ingot.json
 3f29735a4f0f8ded96be3dc3a8aaf35bbd325f29 assets/driverdoesmodding/models/item/dragon_scale.json
 2fcfee3ba3c0d058587534209709c1ed68e59fea assets/driverdoesmodding/models/item/empty_crystal.json
 6956f08af23b975c1f2663aab00bb9e02412b476 assets/driverdoesmodding/models/item/metal_detector.json

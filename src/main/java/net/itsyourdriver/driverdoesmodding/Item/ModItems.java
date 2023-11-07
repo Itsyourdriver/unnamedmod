@@ -36,6 +36,11 @@ public class ModItems {
     public static final RegistryObject<Item> empty_crystal = ITEMS.register("empty_crystal",
             () -> new Item(new Item.Properties().rarity(Rarity.UNCOMMON)));
 
+
+    public static final RegistryObject<Item> dragon_ingot = ITEMS.register("dragon_ingot",
+            () -> new Item(new Item.Properties().rarity(Rarity.EPIC)));
+
+
     public static final RegistryObject<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties().rarity(Rarity.RARE)));
 

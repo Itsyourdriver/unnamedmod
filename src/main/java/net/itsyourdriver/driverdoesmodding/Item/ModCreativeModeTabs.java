@@ -24,6 +24,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.dragon_infused_crystal.get());
                         pOutput.accept(ModItems.empty_crystal.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.dragon_ingot.get());
 
                         pOutput.accept(ModItems.STRAWBERRY.get());
                         pOutput.accept(ModItems.pine_cone.get());
