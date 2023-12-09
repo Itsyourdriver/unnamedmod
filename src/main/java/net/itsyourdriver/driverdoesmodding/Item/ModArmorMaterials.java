@@ -10,8 +10,8 @@ import net.minecraft.world.item.crafting.Ingredient;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    crystal_infused_dragon("crystal_infused_dragon", 26, new int[]{5,7,5,4}, 25,
-            SoundEvents.ARMOR_EQUIP_TURTLE, 1f, 1f, () -> Ingredient.of(ModItems.dragon_scale.get()));
+    crystal_infused_dragon("crystal_infused_dragon", 41, new int[]{4,8,6,3}, 15,
+            SoundEvents.ARMOR_EQUIP_TURTLE, 3f, 0.1f, () -> Ingredient.of(ModItems.dragon_ingot.get()));
 
     private final String name;
     private final int durabilityMultiplier;

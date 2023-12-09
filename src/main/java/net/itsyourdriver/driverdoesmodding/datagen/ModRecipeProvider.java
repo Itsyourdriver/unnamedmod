@@ -25,8 +25,7 @@ import java.util.function.Consumer;
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
 
     private static final Logger LOGGER = LogUtils.getLogger();
-    private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.empty_crystal.get(),
-            ModBlocks.test_block.get());
+    private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.empty_crystal.get());
 
 
     public ModRecipeProvider(PackOutput pOutput) {
@@ -66,6 +65,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.dragon_ingot.get(), 1)
+                .pattern(" F ")
+                .pattern("FEF")
+                .pattern(" F ")
+                .define('E', ModItems.dragon_scale.get())
+                .define('F', ModItems.dragon_infused_crystal.get())
+                .unlockedBy(getHasName(ModItems.dragon_scale.get()), has(ModItems.dragon_infused_crystal.get()))
+                .save(pWriter);
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
@@ -75,10 +83,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
 
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.NETHERITE_CHESTPLATE, 1)
-                .requires(Items.NETHERITE_CHESTPLATE)
-                .unlockedBy(getHasName(Items.NETHERITE_CHESTPLATE), has(Items.NETHERITE_CHESTPLATE))
-                .save(pWriter);
+
     }
 
     protected static void oreSmelting(Consumer<FinishedRecipe> pFinishedRecipeConsumer, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTIme, String pGroup) {

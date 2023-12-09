@@ -49,6 +49,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.pine_cone);
         simpleItem(ModItems.STRAWBERRY);
+        simpleItem(ModItems.CHORUS_BERRY);
         simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.dragon_ingot);
         simpleItem(ModItems.crystal_infused_dragon_upgrade_smithing_template);

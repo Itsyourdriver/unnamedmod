@@ -48,6 +48,9 @@ public class ModItems {
     public static final RegistryObject<Item> STRAWBERRY = ITEMS.register("strawberry",
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
+    public static final RegistryObject<Item> CHORUS_BERRY = ITEMS.register("chorus_berry",
+            () -> new Item(new Item.Properties().food(ModFoods.CHORUS_BERRY)));
+
 
 
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
@@ -90,8 +93,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
             () -> new metaldetectoritem(new Item.Properties().rarity(Rarity.EPIC).durability(100)));
-
-
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
