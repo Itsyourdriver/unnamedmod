@@ -1,7 +1,7 @@
 {
   "entries": [
     "driverdoesmodding:dragon_scale_from_ender_dragon",
-    "driverdoesmodding:crystal_infused_dragon_upgrade_template_from_end_city_treasure"
+    "driverdoesmodding:empty_crystal_from_end_city_treasure"
   ],
   "replace": false
 }

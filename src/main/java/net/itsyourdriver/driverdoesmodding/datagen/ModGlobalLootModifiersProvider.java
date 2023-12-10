@@ -31,10 +31,10 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
 
 
-        add("crystal_infused_dragon_upgrade_template_from_end_city_treasure", new AddItemModifier(new LootItemCondition[] {
+        add("empty_crystal_from_end_city_treasure", new AddItemModifier(new LootItemCondition[] {
 
-                LootItemRandomChanceCondition.randomChance(0.5f).build(),
-                new LootTableIdCondition.Builder(new ResourceLocation("chests/end_city_treasure")).build() }, ModItems.crystal_infused_dragon_upgrade_smithing_template.get()));
+                LootItemRandomChanceCondition.randomChance(0.4f).build(),
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/end_city_treasure")).build() }, ModItems.empty_crystal.get()));
 
 
     }
