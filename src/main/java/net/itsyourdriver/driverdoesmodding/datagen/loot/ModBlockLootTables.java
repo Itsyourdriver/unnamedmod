@@ -1,9 +1,14 @@
 package net.itsyourdriver.driverdoesmodding.datagen.loot;
 
+import net.itsyourdriver.driverdoesmodding.Item.ModItems;
 import net.itsyourdriver.driverdoesmodding.block.ModBlocks;
+import net.itsyourdriver.driverdoesmodding.block.custom.ChorusBerryCropBlock;
+import net.minecraft.advancements.critereon.StatePropertiesPredicate;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.storage.loot.predicates.LootItemBlockStatePropertyCondition;
+import net.minecraft.world.level.storage.loot.predicates.LootItemCondition;
 import net.minecraftforge.registries.RegistryObject;
 
 
@@ -37,6 +42,17 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
         this.add(ModBlocks.SAPPHIRE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.SAPPHIRE_DOOR.get()));
+
+
+        LootItemCondition.Builder lootitemcondition$builder = LootItemBlockStatePropertyCondition
+                .hasBlockStateProperties(ModBlocks.CHORUS_BERRY_CROP.get())
+                .setProperties(StatePropertiesPredicate.Builder.properties().hasProperty(ChorusBerryCropBlock.AGE, 5));
+
+        this.add(ModBlocks.CHORUS_BERRY_CROP.get(), createCropDrops(ModBlocks.CHORUS_BERRY_CROP.get(), ModItems.CHORUS_BERRY.get(),
+                ModItems.CHORUS_BERRY.get(), lootitemcondition$builder));
+
+
+
     }
 
 

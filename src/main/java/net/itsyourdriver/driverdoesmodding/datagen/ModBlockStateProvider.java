@@ -1,12 +1,18 @@
 package net.itsyourdriver.driverdoesmodding.datagen;
 
 import net.itsyourdriver.driverdoesmodding.block.ModBlocks;
+import net.itsyourdriver.driverdoesmodding.block.custom.ChorusBerryCropBlock;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.minecraft.data.PackOutput;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
+import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.function.Function;
 
 public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
@@ -38,7 +44,28 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     doorBlockWithRenderType(((DoorBlock) ModBlocks.SAPPHIRE_DOOR.get()), modLoc("block/sapphire_door_bottom"), modLoc("block/sapphire_door_top"),"cutout");
     trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.SAPPHIRE_TRAPDOOR.get()), modLoc("block/sapphire_trapdoor"), true, "cutout");
+
+
+
+    makeChorusCrop((CropBlock) ModBlocks.CHORUS_BERRY_CROP.get(), "chorus_berry_stage", "chorus_berry_stage");
     }
+
+
+    public void makeChorusCrop(CropBlock block, String modelName, String textureName) {
+        Function<BlockState, ConfiguredModel[]> function = state -> strawberryStates(state, block, modelName, textureName);
+
+        getVariantBuilder(block).forAllStates(function);
+    }
+
+    private ConfiguredModel[] strawberryStates(BlockState state, CropBlock block, String modelName, String textureName) {
+        ConfiguredModel[] models = new ConfiguredModel[1];
+        models[0] = new ConfiguredModel(models().crop(modelName + state.getValue(((ChorusBerryCropBlock) block).getAgeProperty()),
+                new ResourceLocation(driverdoesmodding.MOD_ID, "block/" + textureName + state.getValue(((ChorusBerryCropBlock) block).getAgeProperty()))).renderType("cutout"));
+
+        return models;
+    }
+
+
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));

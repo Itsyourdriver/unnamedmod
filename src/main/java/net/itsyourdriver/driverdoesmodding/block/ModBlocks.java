@@ -1,5 +1,6 @@
 package net.itsyourdriver.driverdoesmodding.block;
 import net.itsyourdriver.driverdoesmodding.Item.ModItems;
+import net.itsyourdriver.driverdoesmodding.block.custom.ChorusBerryCropBlock;
 import net.itsyourdriver.driverdoesmodding.block.custom.SoundBlock;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.minecraft.sounds.SoundEvents;
@@ -53,6 +54,10 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
     public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.EMERALD_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+
+    public static final RegistryObject<Block> CHORUS_BERRY_CROP = BLOCKS.register("chorus_berry_crop",
+            () -> new ChorusBerryCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
 
 

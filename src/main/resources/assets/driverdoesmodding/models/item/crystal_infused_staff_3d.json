@@ -1,9 +1,9 @@
 {
-  "credit": "Made with Blockbench",
+  "credit": "Made with Blockbench - Credit to kaupenjoe.",
   "texture_size": [32, 32],
   "textures": {
-    "0": "driverdoesmodding:item/sapphire_staff_3d",
-    "particle": "driverdoesmodding:item/sapphire_staff_3d"
+    "0": "driverdoesmodding:item/crystal_infused_staff_3d",
+    "particle": "driverdoesmodding:item/crystal_infused_staff_3d"
   },
   "elements": [
     {

@@ -3,6 +3,7 @@ package net.itsyourdriver.driverdoesmodding.Item;
 import net.itsyourdriver.driverdoesmodding.Item.custom.FuelItem;
 import net.itsyourdriver.driverdoesmodding.Item.custom.ModArmorItem;
 import net.itsyourdriver.driverdoesmodding.Item.custom.metaldetectoritem;
+import net.itsyourdriver.driverdoesmodding.block.ModBlocks;
 import net.itsyourdriver.driverdoesmodding.driverdoesmodding;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.*;
@@ -49,11 +50,11 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.STRAWBERRY)));
 
     public static final RegistryObject<Item> CHORUS_BERRY = ITEMS.register("chorus_berry",
-            () -> new Item(new Item.Properties().food(ModFoods.CHORUS_BERRY)));
+            () -> new ItemNameBlockItem(ModBlocks.CHORUS_BERRY_CROP.get(), new Item.Properties().food(ModFoods.CHORUS_BERRY)));
 
 
 
-    public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
+    public static final RegistryObject<Item> CRYSTAL_INFUSED_STAFF = ITEMS.register("crystal_infused_staff",
             () -> new Item(new Item.Properties().stacksTo(1).rarity(Rarity.RARE)));
 
 

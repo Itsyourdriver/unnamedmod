@@ -29,6 +29,14 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
     }, ModItems.dragon_scale.get()));
 
 
+        add("dragon_scale_from_ender_dragon2", new AddItemModifier(new LootItemCondition[]{
+                //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
+                //LootItemRandomChanceCondition.randomChance(0.35f).build()
+
+                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
+        }, ModItems.dragon_scale.get()));
+
+
 
 
         add("empty_crystal_from_end_city_treasure", new AddItemModifier(new LootItemCondition[] {

@@ -27,7 +27,7 @@ public class ModCreativeModeTabs {
                      //   pOutput.accept(ModItems.pine_cone.get());
 
 
-                        pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
+                        pOutput.accept(ModItems.CRYSTAL_INFUSED_STAFF.get());
 
 
                       //  pOutput.accept(ModBlocks.test_block.get());

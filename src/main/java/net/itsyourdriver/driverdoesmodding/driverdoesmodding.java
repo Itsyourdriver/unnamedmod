@@ -63,6 +63,12 @@ public class driverdoesmodding
             event.accept(ModItems.dragon_infused_crystal.get());
             event.accept(ModItems.dragon_scale.get());
             event.accept(ModItems.empty_crystal.get());
+            event.accept(ModItems.dragon_ingot.get());
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.FOOD_AND_DRINKS) {
+            event.accept(ModItems.CHORUS_BERRY.get());
+
         }
     }
 
