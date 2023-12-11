@@ -6,7 +6,7 @@
         "items": [
           {
             "items": [
-              "driverdoesmodding:empty_crystal"
+              "minecraft:dragon_breath"
             ]
           }
         ]
@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "driverdoesmodding:dragon_infused_crystal_from_blasting_empty_crystal"
+        "recipe": "driverdoesmodding:dragon_infused_crystal"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "driverdoesmodding:dragon_infused_crystal_from_blasting_empty_crystal"
+      "driverdoesmodding:dragon_infused_crystal"
     ]
   },
   "sends_telemetry_event": false

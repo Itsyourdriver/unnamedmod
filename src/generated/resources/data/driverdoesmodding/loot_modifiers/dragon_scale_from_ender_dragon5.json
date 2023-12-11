@@ -1,0 +1,14 @@
+{
+  "type": "driverdoesmodding:add_item",
+  "conditions": [
+    {
+      "chance": 0.3,
+      "condition": "minecraft:random_chance"
+    },
+    {
+      "condition": "forge:loot_table_id",
+      "loot_table_id": "minecraft:entities/ender_dragon"
+    }
+  ],
+  "item": "driverdoesmodding:dragon_scale"
+}

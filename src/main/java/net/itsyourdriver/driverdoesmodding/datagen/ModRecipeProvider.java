@@ -35,8 +35,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         LOGGER.info("we did some stuff with packoutput and all that");
-        oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 500, "sapphire");
-        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 370, "sapphire");
+       // oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 500, "sapphire");
+      //  oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 0.25f, 370, "sapphire");
         dragonSmithing(pWriter,Items.NETHERITE_CHESTPLATE, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_CHESTPLATE.get());
         dragonSmithing(pWriter,Items.NETHERITE_LEGGINGS, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_LEGGINGS.get());
         dragonSmithing(pWriter,Items.NETHERITE_HELMET, RecipeCategory.MISC, ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get());
@@ -50,6 +50,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.dragon_infused_crystal.get(), 1)
+                .pattern(" F ")
+                .pattern("FEF")
+                .pattern(" F ")
+                .define('E', ModItems.empty_crystal.get())
+                .define('F', Items.DRAGON_BREATH)
+                .unlockedBy(getHasName(ModItems.empty_crystal.get()), has(Items.DRAGON_BREATH))
+                .save(pWriter);
 
 
 
@@ -69,8 +79,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" F ")
                 .pattern("FEF")
                 .pattern(" F ")
-                .define('E', ModItems.dragon_scale.get())
-                .define('F', ModItems.dragon_infused_crystal.get())
+                .define('E', ModItems.dragon_infused_crystal.get())
+                .define('F', ModItems.dragon_scale.get())
                 .unlockedBy(getHasName(ModItems.dragon_scale.get()), has(ModItems.dragon_infused_crystal.get()))
                 .save(pWriter);
 

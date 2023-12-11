@@ -3,10 +3,10 @@
   "category": "misc",
   "key": {
     "E": {
-      "item": "driverdoesmodding:dragon_infused_crystal"
+      "item": "driverdoesmodding:empty_crystal"
     },
     "F": {
-      "item": "driverdoesmodding:dragon_scale"
+      "item": "minecraft:dragon_breath"
     }
   },
   "pattern": [
@@ -15,7 +15,7 @@
     " F "
   ],
   "result": {
-    "item": "driverdoesmodding:dragon_ingot"
+    "item": "driverdoesmodding:dragon_infused_crystal"
   },
   "show_notification": true
 }
