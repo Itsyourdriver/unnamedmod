@@ -6,7 +6,7 @@
       "item": "driverdoesmodding:crystal_infused_dragon_upgrade_smithing_template"
     },
     "E": {
-      "item": "driverdoesmodding:dragon_infused_crystal"
+      "item": "driverdoesmodding:empty_crystal"
     },
     "F": {
       "item": "minecraft:diamond"
@@ -15,7 +15,7 @@
   "pattern": [
     "FDF",
     "FEF",
-    "FFF"
+    " F "
   ],
   "result": {
     "count": 2,

@@ -2,7 +2,7 @@
   "type": "driverdoesmodding:add_item",
   "conditions": [
     {
-      "chance": 0.4,
+      "chance": 0.5,
       "condition": "minecraft:random_chance"
     },
     {

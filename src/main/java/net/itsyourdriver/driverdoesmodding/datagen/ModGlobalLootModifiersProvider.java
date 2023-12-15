@@ -21,53 +21,19 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
 
     @Override
     protected void start() {
-    add("dragon_scale_from_ender_dragon", new AddItemModifier(new LootItemCondition[]{
-          //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
+   // add("dragon_scale_from_ender_dragon", new AddItemModifier(new LootItemCondition[]{
+   //       //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
             //LootItemRandomChanceCondition.randomChance(0.35f).build()
 
-            new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
-    }, ModItems.dragon_scale.get()));
+     //       new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
+    //}, ModItems.dragon_scale.get()));
 
 
-        add("dragon_scale_from_ender_dragon2", new AddItemModifier(new LootItemCondition[]{
-                //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
-                //LootItemRandomChanceCondition.randomChance(0.35f).build()
-
-                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
-        }, ModItems.dragon_scale.get()));
-
-        add("dragon_scale_from_ender_dragon3", new AddItemModifier(new LootItemCondition[]{
-                //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
-                //LootItemRandomChanceCondition.randomChance(0.35f).build()
-
-                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
-        }, ModItems.dragon_scale.get()));
-
-        add("dragon_scale_from_ender_dragon4", new AddItemModifier(new LootItemCondition[]{
-                //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
-                //LootItemRandomChanceCondition.randomChance(0.35f).build()
-
-                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
-        }, ModItems.dragon_scale.get()));
-
-
-
-        add("dragon_scale_from_ender_dragon5", new AddItemModifier(new LootItemCondition[]{
-                //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
-                LootItemRandomChanceCondition.randomChance(0.3f).build(),
-                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
-        }, ModItems.dragon_scale.get()));
-
-        add("dragon_scale_from_ender_dragon6", new AddItemModifier(new LootItemCondition[]{
-                //  LootItemBlockStatePropertyCondition.hasBlockStateProperties(Blocks.GRASS_BLOCK).build(), - for block drops!
-                LootItemRandomChanceCondition.randomChance(0.3f).build(),
-                new LootTableIdCondition.Builder(new ResourceLocation("entities/ender_dragon")).build()
-        }, ModItems.dragon_scale.get()));
 
 
         add("empty_crystal_from_end_city_treasure", new AddItemModifier(new LootItemCondition[] {
 
-                LootItemRandomChanceCondition.randomChance(0.4f).build(),
+                LootItemRandomChanceCondition.randomChance(0.5f).build(),
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/end_city_treasure")).build() }, ModItems.empty_crystal.get()));
 
 

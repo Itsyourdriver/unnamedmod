@@ -67,17 +67,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.crystal_infused_dragon_upgrade_smithing_template.get(), 2)
                 .pattern("FDF")
                 .pattern("FEF")
-                .pattern("FFF")
+                .pattern(" F ")
                 .define('D', ModItems.crystal_infused_dragon_upgrade_smithing_template.get())
-                .define('E', ModItems.dragon_infused_crystal.get())
+                .define('E', ModItems.empty_crystal.get())
                 .define('F', Items.DIAMOND)
-                .unlockedBy(getHasName(ModItems.dragon_scale.get()), has(ModItems.dragon_infused_crystal.get()))
+                .unlockedBy(getHasName(ModItems.dragon_scale.get()), has(ModItems.empty_crystal.get()))
                 .save(pWriter);
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.dragon_ingot.get(), 1)
                 .pattern(" F ")
-                .pattern("FEF")
+                .pattern(" E ")
                 .pattern(" F ")
                 .define('E', ModItems.dragon_infused_crystal.get())
                 .define('F', ModItems.dragon_scale.get())

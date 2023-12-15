@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
 
 
     public static final RegistryObject<CreativeModeTab> ITSYOURDRIVER = CREATIVE_MODE_TABS.register("itsyourdriver",
-            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.dragon_infused_crystal.get()))
+            () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.CRYSTAL_INFUSED_DRAGON_HELMET.get()))
                     .title(Component.translatable("creativetab.itsyourdriver"))
                     .displayItems((pParameters, pOutput) -> {
 
@@ -31,7 +31,7 @@ public class ModCreativeModeTabs {
 
 
                       //  pOutput.accept(ModBlocks.test_block.get());
-                      //  pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+                         pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
 
                      //   pOutput.accept(ModItems.SAPPHIRE_SWORD.get());

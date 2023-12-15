@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:entity",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "driverdoesmodding:dragon_scale",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 8
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0,
+                "max": 4
+              },
+              "add": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
